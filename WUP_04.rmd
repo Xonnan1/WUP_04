@@ -11,8 +11,9 @@ output:
 require(knitr)
 require(tidyverse)
 require(tigerstats)
-
+GSScsv.csv <- read_csv("GSScsv.csv")
 ```
+
 
 # Introduction
 
@@ -37,6 +38,15 @@ The data I choose is the numerical categorical helper file that will help solve 
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+basicCN <- ggplot(GSScsv.csv,aes(x=DEGREE,y=WORDSUM))
+```
+```{r}
+basicCN + geom_boxplot()
+```
+
+
 
 ### Numerical Descriptive Results
 
