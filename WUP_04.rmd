@@ -46,7 +46,7 @@ basicCN <- ggplot(GSScsv.csv,aes(x=DEGREE,y=WORDSUM))
 basicCN + geom_boxplot()
 ```
 
-
+The 
 
 ### Numerical Descriptive Results
 
@@ -80,4 +80,4 @@ After plotting at 98% confidence level there is a difference between High School
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-
+The Graduate and the LT high school are inherently different in statistical value in q1 and q3. Looking over the p-value of 0.000236 which concludes the 2 different categories while the confidence levels at 98% was below 0 suggesting the significant difference.
